@@ -16,13 +16,18 @@ const geistMono = Roboto_Mono({
 
 export const metadata: Metadata = {
   title: "LOTUS",
-  description: "Минималистичный дизайн для мобильных устройств",
-  keywords: ["LOTUS", "минимализм", "мобильный дизайн"],
-  authors: [{ name: "LOTUS Team" }],
+  description: "Lotus - Legenda britanică a ajuns în Moldova.",
+  keywords: ["LOTUS"],
+  authors: [{ name: "goQode" }],
   openGraph: {
-    title: "LOTUS",
-    description: "Минималистичный дизайн для мобильных устройств",
+    title: "Lotus - Legenda britanică a ajuns în Moldova.",
+    description: "Lotus - Legenda britanică a ajuns în Moldova.",
     type: "website",
+  },
+  twitter: {
+    title: "Lotus - Legenda britanică a ajuns în Moldova.",
+    description: "Lotus - Legenda britanică a ajuns în Moldova.",
+    card: "summary_large_image",
   },
 };
 

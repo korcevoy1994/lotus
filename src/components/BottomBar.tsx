@@ -73,7 +73,7 @@ export default function BottomBar() {
         <DrawerTrigger asChild>
           <div className="px-6 py-4">
             <button
-              className="w-full py-4 px-8 rounded-full font-medium text-lg transition-all duration-300 transform bg-yellow-400 text-black hover:bg-yellow-300 hover:scale-105 active:scale-95 shadow-lg hover:shadow-yellow-400/25"
+              className="w-full py-4 px-8 rounded-full font-medium text-lg transition-all duration-300 transform bg-[#fdef01] text-black hover:bg-[#e4d700] hover:scale-105 active:scale-95 shadow-lg hover:shadow-[#fdef01]/25"
             >
               <DecryptedText
                 text="Voi veni"
@@ -207,7 +207,7 @@ export default function BottomBar() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="flex-1 py-3 px-6 bg-yellow-400 text-black rounded-lg hover:bg-yellow-300 transition-colors font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="flex-1 py-3 px-6 bg-[#fdef01] text-black rounded-lg hover:bg-[#e4d700] transition-colors font-medium disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <DecryptedText
                       text={isSubmitting ? "Se trimite..." : "Trimite"}

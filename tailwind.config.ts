@@ -14,8 +14,9 @@ const config: Config = {
         foreground: "hsl(var(--foreground))",
         ring: "hsl(var(--ring))",
         yellow: {
-          400: "#fdf002",
-          DEFAULT: "#fdf002",
+          400: "#fdef01",
+          600: "#fdef01",
+          DEFAULT: "#fdef01",
         },
       },
     },
