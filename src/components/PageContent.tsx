@@ -107,7 +107,7 @@ export default function PageContent() {
                 </h3>
                 <p className="text-white text-xl md:text-2xl leading-relaxed">
                   <DecryptedText
-                    text="Chisinău, str. Calea Orheiului 17"
+                    text="Chisinău, str. Calea Ieșilor 17"
                     className="text-white"
                     encryptedClassName="text-gray-500"
                     speed={40}
