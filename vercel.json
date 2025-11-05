@@ -3,13 +3,5 @@
   "outputDirectory": ".next",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "regions": ["fra1"],
-  "functions": {
-    "src/app/**/*.ts": {
-      "runtime": "nodejs18.x"
-    },
-    "src/app/**/*.tsx": {
-      "runtime": "nodejs18.x"
-    }
-  }
+  "regions": ["fra1"]
 }
