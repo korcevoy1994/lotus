@@ -53,13 +53,11 @@ git push origin main
 src/app/
 ├── layout.tsx          # Исправлен metadata + viewport
 ├── page.tsx            # Главная страница
-├── about/
-│   └── page.tsx        # Исправлен metadata + viewport
 ├── not-found.tsx       # Создан с правильной структурой
 └── globals.css
 
 vercel.json             # Конфигурация Vercel
-next.config.ts          # Оптимизированная конфигурация
+next.config.mjs         # Оптимизированная конфигурация
 package.json            # Обновлены версии зависимостей
 ```
 
