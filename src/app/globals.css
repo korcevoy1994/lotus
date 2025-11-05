@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: oklch(0 0 0);
+  --foreground: oklch(0.985 0 0);
+  --border: oklch(0.2 0 0);
+  --ring: oklch(0.5 0 0);
+  --yellow: #fdf002;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* Предотвращаем масштабирование на мобильных устройствах */
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Убираем полосы прокрутки для более чистого вида на мобильных */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Для Firefox */
+  * {
+    scrollbar-width: none;
+  }
+  
+  /* Для IE и Edge */
+  * {
+    -ms-overflow-style: none;
+  }
+}
+
+/* Оптимизация для мобильных устройств */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Улучшение рендеринга видео на мобильных */
+video {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
