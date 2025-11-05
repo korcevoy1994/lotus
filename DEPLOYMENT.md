@@ -63,6 +63,25 @@ package.json            # Обновлены версии зависимосте
 
 ## Возможные проблемы и решения
 
+### Переменные окружения на Vercel
+На Vercel переменные окружения задаются в настройках проекта (UI) и НЕ читаются из `.env.production` из репозитория.
+
+Добавьте переменные в Project Settings → Environment Variables:
+
+- `NEXT_PUBLIC_SUPABASE_URL` — URL вашей инстанции Supabase
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY` — публичный ANON ключ Supabase
+
+Выберите окружения, где они должны быть доступны: `Production`, `Preview`, `Development`.
+
+Примечание: ссылки на Vercel Secrets в `vercel.json` удалены. Если хотите использовать Secrets, создайте их через Vercel CLI:
+
+```bash
+vercel secrets add supabase-url https://YOUR-PROJECT.supabase.co
+vercel secrets add supabase-anon-key YOUR_ANON_KEY
+```
+
+После этого можно сослаться на них как `"@supabase-url"` и `"@supabase-anon-key"` в `vercel.json`.
+
 ### Если сборка не проходит
 1. Убедитесь, что все зависимости установлены: `npm install`
 2. Проверьте версию Node.js (должна быть 18.x или 20.x)
