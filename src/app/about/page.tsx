@@ -1,8 +1,14 @@
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
   title: "О нас | Next.js Приложение",
   description: "Информация о нашем Next.js приложении и используемых технологиях",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#000000",
 };
 
 export default function AboutPage() {
