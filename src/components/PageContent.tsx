@@ -212,7 +212,7 @@ export default function PageContent() {
                 </h3>
                 <p className="text-white text-xl md:text-2xl leading-relaxed">
                   <DecryptedText
-                    text="Business Casual"
+                    text="Smart casual"
                     className="text-white"
                     encryptedClassName="text-gray-500"
                     speed={40}
